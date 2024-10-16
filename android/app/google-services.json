@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "952602738159",
+    "project_id": "donime-e1b0b",
+    "storage_bucket": "donime-e1b0b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:952602738159:android:e90c4e72466dcba238ca1a",
+        "android_client_info": {
+          "package_name": "com.example.doni_me"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXzv7SaCXOLjjcldbt_bW6JoVdJ8K25WU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

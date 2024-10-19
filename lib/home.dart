@@ -1,3 +1,4 @@
+import 'package:doni_me/side_menu/side_menu.dart';
 import 'package:firebase_ui_auth/firebase_ui_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -8,6 +9,9 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        title: const Text('Menu'), // Add title to the AppBar
+        automaticallyImplyLeading: true, // This adds the side menu icon
+        
         actions: [
           IconButton(
             icon: const Icon(Icons.person),
@@ -24,24 +28,16 @@ class HomeScreen extends StatelessWidget {
                         Navigator.of(context).pop();
                       })
                     ],
-                    //children: [
-                      //const Divider(),
-                      //Padding(
-                        //padding: const EdgeInsets.all(2),
-                        //child: AspectRatio(
-                          //aspectRatio: 1,
-                          //child: Image.asset('assets/logo.png'),
-                        //),
-                      //),
-                   // ],
                   ),
                 ),
               );
             },
           )
         ],
-        automaticallyImplyLeading: false,
+        //automaticallyImplyLeading: false,
       ),
+      // Add the drawer to integrate the side menu
+      drawer: const NavDrawer(), // This is your side menu (NavDrawer)
       body: Center(
         child: Column(
           children: [
